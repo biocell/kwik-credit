@@ -14,23 +14,28 @@
 } 
 #register-form form #first{
     width:400px;
+    margin:10px;   
     height: 40px;
 }
 #register-form form #last{
     width:400px;
+    margin:10px;
     height: 40px;
 }
 #register-form form #email{
     width:400px;
+    margin:10px;
     height: 40px;
 }
 
 #register-form form #password{
     width:400px;
+    margin:10px;
     height: 40px;
 }
 #register-form form #confirm-password{
     width:400px;
+    margin:10px;
     height: 40px;
 }
 #register-form .button{
@@ -38,6 +43,7 @@
     border: none;
     color: white;
     padding: 15px 32px;
+    margin:10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

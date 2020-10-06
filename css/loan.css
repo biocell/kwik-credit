@@ -1,29 +1,38 @@
-.login-container{
+.loan-container{
     display:flex;
     margin-top:40px;
     justify-content:center; 
     width:100%;
-    text-align: center;
+    text-align:center;
 }
-#login{
-    font-weight:bolder;
-    border-bottom: 2px solid #ffffff;
-}
-#login-form{
+#loan-form{
     margin:0 auto;
 } 
-#login-form form #email{
-    width:400px;
-    height: 40px;
-    margin:10px;
+#form-header{
+    margin-bottom: 40px;
 }
-
-#login-form form #password{
+#loan-form input[type=text]{
     width:400px;
+    margin:10px;   
     height: 40px;
-    margin:10px;
 }
-#login-form .button{
+#loan-form input[type=number]{
+    width:400px;
+    margin:10px;   
+    height: 40px;
+}
+#loan-form input[type=date]{
+    width:400px;
+    margin:10px;   
+    height: 40px;
+}
+#loan-form h3{
+    text-align:center;
+}
+#duration{
+    margin:10px;  
+}
+#loan-form .button{
     background-color: #127faf;
     border: none;
     color: white;

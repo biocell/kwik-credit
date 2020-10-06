@@ -1,0 +1,21 @@
+.container-fluid{
+
+}
+.loans-nav{
+    display: flex;
+    justify-content:space-around;
+}
+.loans-nav ul{
+        
+        display:inline;
+        margin:50px;
+        }
+.loans-nav li{
+    list-style: none;
+    float:left;
+    display:block;
+    margin:30px;
+}
+.loans-nav a{
+    text-decoration:none;
+}

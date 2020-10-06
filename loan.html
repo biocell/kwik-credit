@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick Credit</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/loan.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <header class="header">
+          <div id="logo">
+              <a class="navbar-brand" href="index.html">QwikCredit</a>
+          </div>      
+            <nav class="navbar">
+                <ul class="nav">
+                    <li class="nav-item" id="logged-in"><a class="" href="">Logged In</a></li>        
+                    <li class="nav-item" id="loan-repayment"><a class="" href="loan-repayment.html">View Loan Repayment History</a></li>
+                </ul>
+        </nav>
+    </header>
+<div class="loan-container">
+    <div id="loan-form">
+            <h1>Please input your details </h1>
+            <form method="POST" action="">
+                <h2>Contact Information</h2>
+                <p>
+                    <input id="name" type="text" name="name" placeholder="Full Name"/>
+                </p>
+                <p>
+                        <label>Date of Birth</label>
+                        <br/>
+                    <input id="dob" type="date" name="dob"/>
+                </p>
+                <p>
+                    <label>Marital Status</label>
+                    <br/>
+                    <input id="single" type="radio" name="status" value="single">
+                        <label for = "single">Single</label>
+                    <input id="married" type="radio" name="status" value="married">
+                        <label for = "married">Married</label>
+                    <input id="other" type="radio" name="status" value="other">
+                        <label for = "other">Other</label>
+
+                </p>
+                <p>
+                        <input id="email" type="text" name="email" placeholder="Email" />
+                    </p>
+                            
+                <p>
+                    <input id="phone-number" type="number" name="phone-number" placeholder="Phone Number" />
+                </p>
+                <p>
+                        <input id="address" type="text" name="address" placeholder="Street Address" />
+                    </p>
+                    <p>
+                            <input id="city" type="text" name="city" placeholder="City" />
+                        </p>
+                        <p>
+                                <label id="duration">How long have you lived at your current address</label>
+                                <br/>
+                                <input id="lessthantwo" type="radio" name="number-of-years" value="lessthantwo">
+                                    <label for = "lessthantwo">Less than 2 years</label>
+                                <input id="lessthanfive" type="radio" name="number-of-years" value="lessthanfive">
+                                    <label for = "lessthanfive">Less than 5 years</label>
+                                <input id="morethanfive" type="radio" name="number-of-years" value="">
+                                    <label for = "morethanfive">More than 5 years</label>
+            
+                            </p>
+                            <h2>Employment Information</h2>
+                            <p>
+                                    <input id="employer" type="text" name="employer" placeholder="Present Employer" />
+                                </p>
+                                <p>
+                                        <input id="occupation" type="text" name="occupation" placeholder="Occupation" />
+                                    </p>
+                                    <p>
+                                            <input id="income" type="text" name="income" placeholder="Gross monthly income" />
+                                        </p>
+                                        <label>I hereby agree that the Information given is true, accurate and complete<br/> as of the date of this application submission</label>
+                                            <input type = "checkbox"/>
+                                        <br/>
+                                        <button class="button">Send Application Now</button>
+                <br/>
+         </form>
+         <p> Already have an account? <a href="login.html">Login</a></p>
+        </div>
+       
+
+    </div>
+</body>
+</html>
