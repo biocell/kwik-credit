@@ -4,6 +4,7 @@ const cors = require('cors');
 
 const db = [];
 const users = require('./app/routes/users');
+const admins = require('./app/routes/admins');
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
 
 
 app.use(users);
+app.use(admins);
 
 app.listen(port, (req, res) => {
     console.log(`we are live on port ${port}`);

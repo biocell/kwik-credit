@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick Credit</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/loan.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <header class="header">
+          <div id="logo">
+              <a class="navbar-brand" href="index.html">QwikCredit</a>
+          </div>      
+            <nav class="navbar">
+                <ul class="nav">
+                    <li class="nav-item" id="logged-in"><a class="" href="">Logged In</a></li>        
+                    <li class="nav-item" id="loan-repayment"><a class="" href="loan-repayment.html">View Loan Repayment History</a></li>
+                </ul>
+        </nav>
+    </header>
+<div class="loan-container">
+    <div id="loan-form">
+            <h1>Please fill all fields </h1>
+            <form method="POST" action="http://localhost/8000/loans">
+                <h2>Loan Request Form</h2>
+                    <p>
+                        <input id="email" type="text" name="email" placeholder="Email" />
+                    </p>
+                            
+                <p>How much will you like to borrow<br>
+                    <input id="loan-amount" type="number" name="loan-amount" placeholder="between(#5,000 - #200,000)" />
+                </p>
+                        <p>
+                                <label id="duration">Please select payment installations</label>
+                                <br/>
+                                <input id="monthly" type="radio" name="payment" value="monthly">
+                                    <label for = "monthly">Monthly</label>
+                                <input id="quarterly" type="radio" name="payment" value="quarterly">
+                                    <label for = "quarterly">Quarterly (Every 4 months)</label>
+                                <input id="halfly" type="radio" name="payment" value="">
+                                    <label for = "halfly">Every 6 months</label>
+            
+                            </p>
+                            <button class="button">Submit</button>
+                <br/>
+         </form>
+        </div>
+       
+
+    </div>
+</body>
+</html>

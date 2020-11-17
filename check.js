@@ -1,18 +1,6 @@
 const fs = require('fs');
-function getUsers(path, callback) {
-    fs.readFile(path, 'utf8', function (err, data) {
-        if (err) throw err;
-        callback(data);
-    })
-}
+const path = require('path');
 
-function updateUsers(newUser) {
-    getUsers('/users.json', function (data) {
-        let users = JSON.parse(data)
-        users.push(newUser)
-        fs.writeFile('/users.json', users, function (err) {
-            if (err) throw err;
-            return
-        });
-    });
-}
+let rawdata = fs.readFileSync(path.resolve(__dirname, 'student.json'));
+let student = JSON.parse(rawdata);
+console.log(student);
